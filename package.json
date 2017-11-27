@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-example-using-graphcms",
+  "name": "gatsby-graphcms-example",
   "description": "Gatsby example site using the GraphCMS source plugin",
   "version": "1.0.0",
   "author": "Rafael Cordones <rafael@cordones.me>",
@@ -10,7 +10,12 @@
     "react-star-rating-component": "^1.3.0"
   },
   "keywords": [
-    "gatsby"
+    "data",
+    "example",
+    "gatsby",
+    "graphcms",
+    "graphql",
+    "source"
   ],
   "license": "MIT",
   "main": "n/a",
