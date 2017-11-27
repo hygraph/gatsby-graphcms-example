@@ -1,4 +1,5 @@
 See [@GraphCMS/gatsby-source-graphcms](https://github.com/GraphCMS/gatsby-source-graphcms)
+Please file any issues [over there](https://github.com/GraphCMS/gatsby-source-graphcms/issues) and label them `example`.
 
 # Gatsby’s GraphCMS plugin testing
 
@@ -103,6 +104,6 @@ It puts this in the console:
 * [@hmeissner](https://github.com/hmeissner) Hugo Meissner
 * [@rdela](https://github.com/rdela) Ricky de Laveaga
 
-…[and you](https://github.com/GraphCMS/gatsby-graphcms-example/issues)?
+…[and you](https://github.com/GraphCMS/gatsby-source-graphcms/issues)?
 
 See https://github.com/GraphCMS/gatsby-source-graphcms for more.
