@@ -5,13 +5,8 @@ Please file any issues [over there](https://github.com/GraphCMS/gatsby-source-gr
 
 ## Install
 
-1. `git clone https://github.com/GraphCMS/gatsby-graphcms-example.git`
-1. `yarn`
-  or
-  `npm i`
-1. `yarn develop`
-  or
-  `gatsby develop`
+1. `git clone https://github.com/GraphCMS/gatsby-graphcms-example.git && cd gatsby-graphcms-example/`
+1. `yarn && yarn develop`
 
 ## Graph<em>i</em>QL
 
@@ -98,6 +93,9 @@ It puts this in the console:
 }
 ```
 
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/GraphCMS/gatsby-graphcms-example)
 
 ## Contributors
 
