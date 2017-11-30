@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "author": "Rafael Cordones <rafael@cordones.me>",
+  "main": "index.js",
   "dependencies": {
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
