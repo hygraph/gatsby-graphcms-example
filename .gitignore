@@ -9,7 +9,7 @@ public/
 # npm dev
 /*.js
 !index.js
-package-lock.json
+yarn.lock
 tests
 
 # Logs
