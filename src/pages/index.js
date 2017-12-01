@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Markdown from 'react-markdown'
 import StarRatingComponent from 'react-star-rating-component'
 import Link from 'gatsby-link'
 
@@ -166,7 +167,11 @@ class IndexPage extends Component {
               )}
               {node.review && (
                 <div>
-                  <p>{node.review}</p>
+                  <Markdown
+                    source={node.review}
+                    escapeHtml={false}
+                  />
+
                 </div>
               )}
               {node.comments.length ? (
