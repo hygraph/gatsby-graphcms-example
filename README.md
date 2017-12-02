@@ -90,15 +90,6 @@ It puts this in the console:
       }
     }
   }
-  allReviewsMarkdown {
-    edges {
-      node {
-        internal {
-          content
-        }
-      }
-    }
-  }
 }
 ```
 

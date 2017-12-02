@@ -49,6 +49,25 @@ module.exports = {
               title
             }
           }
+          allReviews(orderBy: createdAt_DESC) {
+            id
+            slug
+            createdAt
+            record {
+              slug
+              title
+              artist {
+                slug
+                name
+              }
+            }
+            title
+            review
+            rating
+            comments {
+              body
+            }
+          }
         }`,
       },
     },
