@@ -18,15 +18,15 @@
   "license": "MIT",
   "author": "Ricky de Laveaga (https://rdela.com)",
   "dependencies": {
-    "gatsby": "^1.9.45",
-    "gatsby-link": "^1.6.17",
-    "gatsby-plugin-manifest": "^1.0.9",
-    "gatsby-plugin-offline": "^1.0.11",
-    "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-source-graphcms": "^0.0.1",
-    "gatsby-transformer-remark": "^1.7.23",
-    "react-markdown": "^3.1.0",
-    "react-star-rating-component": "^1.3.0"
+    "gatsby": "1.9.128",
+    "gatsby-link": "1.6.30",
+    "gatsby-plugin-manifest": "1.0.9",
+    "gatsby-plugin-offline": "1.0.11",
+    "gatsby-plugin-react-helmet": "2.0.2",
+    "gatsby-source-graphcms": "0.0.1",
+    "react-helmet": "5.2.0",
+    "react-markdown": "3.1.0",
+    "react-star-rating-component": "1.3.0"
   },
   "scripts": {
     "build": "gatsby build",
@@ -35,7 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.6.1"
+    "prettier": "1.8.2"
   },
   "renovate": {
     "extends": [
