@@ -3126,7 +3126,7 @@ gatsby-cli@^1.1.25:
     yargs "^8.0.2"
     yurnalist "^0.2.1"
 
-gatsby-link@^1.6.17:
+gatsby-link@1.6.30:
   version "1.6.30"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.30.tgz#d75a7ceaa9e138b5f4f64cc6dbf1e0632876bd09"
   dependencies:
@@ -3141,26 +3141,25 @@ gatsby-module-loader@^1.0.9:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-manifest@^1.0.9:
+gatsby-plugin-manifest@1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.9.tgz#efdbac6e65ce9d759ce1ed3c8054e492f8f2b30e"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
 
-gatsby-plugin-offline@^1.0.11:
+gatsby-plugin-offline@1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.11.tgz#ab67ca90f5a0139a61bcb29b79b5587741ecac5c"
   dependencies:
     babel-runtime "^6.26.0"
     sw-precache "^5.0.0"
 
-gatsby-plugin-react-helmet@^1.0.5:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-1.0.8.tgz#1adf87229cd54f11c95bb16b25e3cc5f20fee871"
+gatsby-plugin-react-helmet@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.2.tgz#46294bc66872499f9dc8f0a5c0e0d029b0e3c994"
   dependencies:
     babel-runtime "^6.26.0"
-    react-helmet "^5.1.3"
 
 gatsby-react-router-scroll@^1.0.6:
   version "1.0.6"
@@ -3170,7 +3169,7 @@ gatsby-react-router-scroll@^1.0.6:
     scroll-behavior "^0.9.1"
     warning "^3.0.0"
 
-gatsby-source-graphcms@^0.0.1:
+gatsby-source-graphcms@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-source-graphcms/-/gatsby-source-graphcms-0.0.1.tgz#129c5e68b18053a4c90e1f7170d39daa96308783"
   dependencies:
@@ -3178,9 +3177,9 @@ gatsby-source-graphcms@^0.0.1:
     graphql-request "^1.3.4"
     ramda "^0.25.0"
 
-gatsby@^1.9.45:
-  version "1.9.127"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.127.tgz#2f70a3fa3820869d40f74f0be0006b0afdc7e34e"
+gatsby@1.9.128:
+  version "1.9.128"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.128.tgz#9b78bee5cf160886610f53ef203c645b698454d4"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -6098,7 +6097,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.6.1:
+prettier@1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.8.2.tgz#bff83e7fd573933c607875e5ba3abbdffb96aeb8"
 
@@ -6327,7 +6326,7 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-helmet@^5.1.3:
+react-helmet@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.0.tgz#a81811df21313a6d55c5f058c4aeba5d6f3d97a7"
   dependencies:
@@ -6346,7 +6345,7 @@ react-hot-loader@^3.0.0-beta.6:
     redbox-react "^1.3.6"
     source-map "^0.6.1"
 
-react-markdown@^3.1.0:
+react-markdown@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-3.1.0.tgz#b83ee8457496b1edb0c1b6250755971b752858c3"
   dependencies:
@@ -6392,7 +6391,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-star-rating-component@^1.3.0:
+react-star-rating-component@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/react-star-rating-component/-/react-star-rating-component-1.3.0.tgz#af6c98d6f40bdc6a21e141583578a9dbb10e65bb"
   dependencies:
