@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Markdown from 'react-markdown'
 import StarRatingComponent from 'react-star-rating-component'
 import Link from 'gatsby-link'
 
@@ -42,8 +43,9 @@ class IndexPage extends Component {
               <h3 id={node.slug}>{node.name}</h3>
               <figure>
                 <img
-                  src={`https://media.graphcms.com/resize=w:512,h:512,a:top,fit:crop/${node
-                    .picture.handle}`}
+                  src={`https://media.graphcms.com/resize=w:512,h:512,a:top,fit:crop/${
+                    node.picture.handle
+                  }`}
                   alt={node.name}
                   title={node.name}
                   width="256"
@@ -95,8 +97,9 @@ class IndexPage extends Component {
             >
               <figure>
                 <img
-                  src={`https://media.graphcms.com/resize=w:512,h:512,a:top,fit:crop/${node
-                    .cover.handle}`}
+                  src={`https://media.graphcms.com/resize=w:512,h:512,a:top,fit:crop/${
+                    node.cover.handle
+                  }`}
                   alt={node.title}
                   title={node.title}
                   width="256"
@@ -139,9 +142,7 @@ class IndexPage extends Component {
             >
               <h3 id={node.slug}>{node.title}</h3>
               <p>
-                for <Link to={`#${node.record.slug}`}>
-                  {node.record.title}
-                </Link>{' '}
+                for <Link to={`#${node.record.slug}`}>{node.record.title}</Link>{' '}
                 by{' '}
                 <Link to={`#${node.record.artist.slug}`}>
                   {node.record.artist.name}
@@ -166,7 +167,7 @@ class IndexPage extends Component {
               )}
               {node.review && (
                 <div>
-                  <p>{node.review}</p>
+                  <Markdown source={node.review} escapeHtml={false} />
                 </div>
               )}
               {node.comments.length ? (
