@@ -31,23 +31,23 @@ class IndexPage extends Component {
               {artists.map(({ node }, i) => (
                 <li key={node.id + `nav`}>
                   <h4>
-                    <Link to={`#${node.slug}`}>{node.name}</Link>
+                    <Link to={"/artists/" + node.slug}>{node.name}</Link>
                   </h4>
                 </li>
               ))}
             </ul>
           </nav>
 
-          {artists.map(({ node }, i) => (
-            <article key={node.id}>
-              <h3 id={node.slug}>{node.name}</h3>
+          {artists.map(({ node: artist }, i) => (
+            <article key={artist.id}>
+              <h3 id={artist.slug}>{artist.name}</h3>
               <figure>
                 <img
                   src={`https://media.graphcms.com/resize=w:512,h:512,a:top,fit:crop/${
-                    node.picture.handle
+                    artist.picture.handle
                   }`}
-                  alt={node.name}
-                  title={node.name}
+                  alt={artist.name}
+                  title={artist.name}
                   width="256"
                 />
                 <figcaption>
@@ -58,10 +58,10 @@ class IndexPage extends Component {
                     }}
                   >
                     <a
-                      href={`https://media.graphcms.com/${node.picture.handle}`}
+                      href={`https://media.graphcms.com/${artist.picture.handle}`}
                     >
-                      full-size, hi-res photo: ({node.picture.width} W &times;{' '}
-                      {node.picture.height} H)
+                      full-size, hi-res photo: ({artist.picture.width} W &times;{' '}
+                      {artist.picture.height} H)
                     </a>
                   </small>
                 </figcaption>
@@ -72,7 +72,7 @@ class IndexPage extends Component {
                   margin: '0 0 3rem',
                 }}
               >
-                {node.records.map((record, i) => (
+                {artist.records.map((record, i) => (
                   <li key={record.id}>
                     <h4>
                       <p>
@@ -109,7 +109,7 @@ class IndexPage extends Component {
                 </figcaption>
                 {node.artist ? (
                   <p>
-                    <Link to={`#${node.artist.slug}`}>{node.artist.name}</Link>
+                    <Link to={`artists/${node.artist.slug}`}>{node.artist.name}</Link>
                   </p>
                 ) : (
                   <p>(Compilation album, various artists)</p>
@@ -144,7 +144,7 @@ class IndexPage extends Component {
               <p>
                 for <Link to={`#${node.record.slug}`}>{node.record.title}</Link>{' '}
                 by{' '}
-                <Link to={`#${node.record.artist.slug}`}>
+                <Link to={`artists/${node.record.artist.slug}`}>
                   {node.record.artist.name}
                 </Link>
               </p>
