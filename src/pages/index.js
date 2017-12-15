@@ -109,7 +109,7 @@ class IndexPage extends Component {
                 </figcaption>
                 {node.artist ? (
                   <p>
-                    <Link to={`#${node.artist.slug}`}>{node.artist.name}</Link>
+                    <Link to={`artists/${node.artist.slug}`}>{node.artist.name}</Link>
                   </p>
                 ) : (
                   <p>(Compilation album, various artists)</p>
@@ -144,7 +144,7 @@ class IndexPage extends Component {
               <p>
                 for <Link to={`#${node.record.slug}`}>{node.record.title}</Link>{' '}
                 by{' '}
-                <Link to={`#${node.record.artist.slug}`}>
+                <Link to={`artists/${node.record.artist.slug}`}>
                   {node.record.artist.name}
                 </Link>
               </p>

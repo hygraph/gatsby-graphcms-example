@@ -32,9 +32,9 @@ class ArtistDetailTemplate extends React.Component {
                     </figure>
                 <h2>Records</h2>
                 { artist.records.map((record, i) => (
-                    <h3 key={record.id}>{record.title}</h3>
+                    <h3 key={record.id}><Link to={`#${record.slug}`}>{record.title}</Link></h3>
                 ))}
-                <Link to="/">Go back to the homepage</Link>
+                <Link to="/artists">All Artists</Link>
             </div>
         )
     }
