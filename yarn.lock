@@ -3190,9 +3190,9 @@ gatsby-source-graphcms@0.0.1:
     graphql-request "^1.3.4"
     ramda "^0.25.0"
 
-gatsby@1.9.138:
-  version "1.9.138"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.138.tgz#69f710efa66e9bfd33bda52f5fd5fb428ebfa925"
+gatsby@1.9.141:
+  version "1.9.141"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.141.tgz#8cde1d84900abcb7dfa910778cafebdb461e73cd"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
