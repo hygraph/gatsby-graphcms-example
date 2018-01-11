@@ -35,7 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "1.10.1"
+    "prettier": "1.10.2"
   },
   "renovate": {
     "extends": [
