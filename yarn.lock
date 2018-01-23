@@ -3154,23 +3154,23 @@ gatsby-module-loader@^1.0.9:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-manifest@1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.12.tgz#52341f1b1b7bb7b3ac00227e2ccb2659364f0151"
+gatsby-plugin-manifest@1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.13.tgz#49581830298e2c9fda92ae317048d1eb21a50981"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
 
-gatsby-plugin-offline@1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.12.tgz#b56309bb13e545d19181e75d7d35167946a6048d"
+gatsby-plugin-offline@1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.13.tgz#7e747b6b36016107f056a76e52d38680967c1a76"
   dependencies:
     babel-runtime "^6.26.0"
     sw-precache "^5.0.0"
 
-gatsby-plugin-react-helmet@2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.3.tgz#65973894ed54200bc271c6368f34f4c35eb48dd6"
+gatsby-plugin-react-helmet@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.4.tgz#330bd5c2052411b7e4dd8f74e9a57b44ff2ed1ea"
   dependencies:
     babel-runtime "^6.26.0"
 
