@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "Ricky de Laveaga (https://rdela.com)",
   "dependencies": {
-    "gatsby": "1.9.172",
+    "gatsby": "1.9.174",
     "gatsby-link": "1.6.35",
     "gatsby-plugin-manifest": "1.0.13",
     "gatsby-plugin-offline": "1.0.13",
