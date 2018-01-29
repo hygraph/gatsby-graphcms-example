@@ -3214,9 +3214,9 @@ gatsby-source-graphcms@0.0.1:
     graphql-request "^1.3.4"
     ramda "^0.25.0"
 
-gatsby@1.9.172:
-  version "1.9.172"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.172.tgz#2d3719b85fcce392415a654e7bdad1369d12726b"
+gatsby@1.9.173:
+  version "1.9.173"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.173.tgz#9ed9fe129539869075ad18710edafb6b7d3a3d8c"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3304,6 +3304,7 @@ gatsby@1.9.172:
     relay-compiler "^1.4.1"
     remote-redux-devtools "^0.5.7"
     serve "^6.4.0"
+    shallow-compare "^1.2.2"
     sift "^3.2.6"
     signal-exit "^3.0.2"
     slash "^1.0.0"
@@ -7159,6 +7160,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallow-compare@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/shallow-compare/-/shallow-compare-1.2.2.tgz#fa4794627bf455a47c4f56881d8a6132d581ffdb"
 
 shallowequal@^1.0.1:
   version "1.0.2"
