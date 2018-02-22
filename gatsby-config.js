@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby with GraphCMS`,
+    title: `Gatsby with GraphCMS`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -68,8 +68,8 @@ module.exports = {
               body
             }
           }
-        }`,
-      },
+        }`
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -95,5 +95,5 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`
-  ],
-}
+  ]
+};
