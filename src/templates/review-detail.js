@@ -1,22 +1,22 @@
-import React from 'react'
-import * as PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Markdown from 'react-markdown'
-import StarRatingComponent from 'react-star-rating-component'
+import React from "react";
+import * as PropTypes from "prop-types";
+import Link from "gatsby-link";
+import Markdown from "react-markdown";
+import StarRatingComponent from "react-star-rating-component";
 
 const propTypes = {
-  data: PropTypes.object.isRequired,
-}
+  data: PropTypes.object.isRequired
+};
 
 class ReviewDetailTemplate extends React.Component {
   render() {
-    const review = this.props.data.reviews
+    const review = this.props.data.reviews;
     return (
       <div style={{ marginBottom: `4rem` }}>
         <article key={review.id} style={{ marginBottom: `3rem` }}>
           <h1 id={review.slug}>{review.title}</h1>
           <p>
-            for{' '}
+            for{" "}
             <Link to={`/records/${review.record.slug}`}>
               <em>{review.record.title}</em>
             </Link>
@@ -58,19 +58,19 @@ class ReviewDetailTemplate extends React.Component {
           style={{
             marginBottom: `3rem`,
             marginTop: `2.5rem`,
-            textTransform: `uppercase`,
+            textTransform: `uppercase`
           }}
         >
           <Link to="/reviews">All Reviews</Link>
         </h4>
       </div>
-    )
+    );
   }
 }
 
-ReviewDetailTemplate.propTypes = propTypes
+ReviewDetailTemplate.propTypes = propTypes;
 
-export default ReviewDetailTemplate
+export default ReviewDetailTemplate;
 
 export const ReviewDetailPageQuery = graphql`
   query getReviewById($slug: String!) {
@@ -94,4 +94,4 @@ export const ReviewDetailPageQuery = graphql`
       }
     }
   }
-`
+`;

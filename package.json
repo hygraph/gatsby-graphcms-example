@@ -2,7 +2,14 @@
   "version": "1.0.0",
   "name": "gatsby-graphcms-example",
   "description": "Gatsby example site using the GraphCMS source plugin",
-  "keywords": ["data", "example", "gatsby", "graphcms", "graphql", "source"],
+  "keywords": [
+    "data",
+    "example",
+    "gatsby",
+    "graphcms",
+    "graphql",
+    "source"
+  ],
   "homepage": "https://github.com/GraphCMS/gatsby-graphcms-example",
   "repository": {
     "type": "git",
@@ -24,8 +31,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format":
-      "prettier-eslint --write \"src/**/*.js\" \"gatsby-node.js\" \"gatsby-config.js\"",
+    "format": "prettier --write \"src/**/*.js\" \"gatsby-*.js\"",
     "lint": "npm run format",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,11 +39,19 @@
     "prettier": "1.10.2"
   },
   "renovate": {
-    "extends": ["config:base"],
-    "labels": ["renovate"],
-    "assignees": ["rdela"],
+    "extends": [
+      "config:base"
+    ],
+    "labels": [
+      "renovate"
+    ],
+    "assignees": [
+      "rdela"
+    ],
     "devDependencies": {
-      "schedule": ["on the first day of the month"],
+      "schedule": [
+        "on the first day of the month"
+      ],
       "automerge": true,
       "major": {
         "automerge": false
