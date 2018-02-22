@@ -30,23 +30,24 @@ class ArtistDetailTemplate extends React.Component {
             </small>
           </figcaption>
         </figure>
+        {artist.records.length ? (
+          <h5
+            style={{
+              marginBottom: `1rem`,
+              marginTop: `3rem`,
+              textTransform: `uppercase`,
+            }}
+          >
+            Records
+          </h5>
+        ) : null}
         {artist.records.map((record, i) => (
           <div
             key={record.id}
             style={{
               marginBottom: `3rem`,
-              marginTop: `3rem`,
             }}
           >
-            <h5
-              style={{
-                marginBottom: `1rem`,
-                marginTop: `2rem`,
-                textTransform: `uppercase`,
-              }}
-            >
-              Records
-            </h5>
             <h3>
               <Link to={`/records/${record.slug}`}>{record.title}</Link>
             </h3>

@@ -54,7 +54,15 @@ class ReviewDetailTemplate extends React.Component {
             </div>
           ) : null}
         </article>
-        <Link to="/reviews">All Reviews</Link>
+        <h4
+          style={{
+            marginBottom: `3rem`,
+            marginTop: `2.5rem`,
+            textTransform: `uppercase`,
+          }}
+        >
+          <Link to="/reviews">All Reviews</Link>
+        </h4>
       </div>
     )
   }

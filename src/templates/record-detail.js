@@ -29,16 +29,14 @@ class RecordDetailTemplate extends React.Component {
             alt={record.name}
             title={record.name}
             width="256"
-            style={{
-              marginBottom: `0.5rem`,
-            }}
+            style={{ marginBottom: `0.5rem` }}
           />
         </figure>
-        {record.tracks && (
+        {record.tracks.length ? (
           <h5 style={{ marginBottom: `1.5rem`, textTransform: `uppercase` }}>
             Tracklist
           </h5>
-        )}
+        ) : null}
         {record.tracks.map((track, i) => (
           <div key={track.id}>
             <h6>
@@ -48,23 +46,24 @@ class RecordDetailTemplate extends React.Component {
             </h6>
           </div>
         ))}
+        {record.reviews.length ? (
+          <h5
+            style={{
+              marginBottom: `1.5rem`,
+              marginTop: `3rem`,
+              textTransform: `uppercase`,
+            }}
+          >
+            Reviews
+          </h5>
+        ) : null}
         {record.reviews.map((review, i) => (
           <div
             key={review.id}
             style={{
               marginBottom: `2.5rem`,
-              marginTop: `3rem`,
             }}
           >
-            <h5
-              style={{
-                marginBottom: `1.5rem`,
-                marginTop: `2rem`,
-                textTransform: `uppercase`,
-              }}
-            >
-              Reviews
-            </h5>
             <p>
               <Link to={`/reviews/${review.slug}`}>{review.title}</Link>
             </p>
