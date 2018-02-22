@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
-class ArtistPage extends Component {
+class RecordPage extends Component {
   render() {
-    const artists = this.props.data.artists.edges;
+    const records = this.props.data.records.edges;
 
-    console.log(`artists: `, artists);
+    console.log(`records: `, records);
 
     return (
       <div>
-        <section className="artists" style={{ textAlign: `center` }}>
-          <h1>Artists</h1>
+        <section className="records" style={{ textAlign: `center` }}>
+          <h1>Records</h1>
           <nav>
             <ul
               style={{
@@ -21,7 +21,7 @@ class ArtistPage extends Component {
                 width: `100%`
               }}
             >
-              {artists.map(({ node }, i) => (
+              {records.map(({ node }, i) => (
                 <li
                   key={node.id + `nav`}
                   style={{
@@ -30,7 +30,7 @@ class ArtistPage extends Component {
                   }}
                 >
                   <Link
-                    to={`/artists/` + node.slug}
+                    to={`/records/` + node.slug}
                     style={{
                       textDecoration: `none`
                     }}
@@ -38,10 +38,10 @@ class ArtistPage extends Component {
                     <figure>
                       <img
                         src={`https://media.graphcms.com/resize=w:224,h:224,a:top,fit:crop/${
-                          node.picture.handle
+                          node.cover.handle
                         }`}
-                        alt={node.name}
-                        title={node.name}
+                        alt={node.title}
+                        title={node.title}
                         width="112"
                         style={{
                           marginBottom: `0`,
@@ -51,12 +51,12 @@ class ArtistPage extends Component {
                       <figcaption>
                         <h6
                           style={{
-                            fontSize: `0.5675rem`,
                             marginBottom: `0.125rem`,
-                            marginTop: `0`
+                            marginTop: `0`,
+                            fontSize: `0.5675rem`
                           }}
                         >
-                          {node.name}
+                          {node.title}
                         </h6>
                       </figcaption>
                     </figure>
@@ -71,21 +71,23 @@ class ArtistPage extends Component {
   }
 }
 
-export default ArtistPage;
+export default RecordPage;
 
-export const ArtistPageQuery = graphql`
-  query getAllArtists {
-    artists: allArtists {
+export const RecordPageQuery = graphql`
+  query getAllRecords {
+    records: allRecords {
       edges {
         node {
           id
-          name
           slug
-          picture {
+          title
+          artist {
             id
+            slug
+            name
+          }
+          cover {
             handle
-            width
-            height
           }
         }
       }

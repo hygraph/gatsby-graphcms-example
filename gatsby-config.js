@@ -74,12 +74,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby with GraphCMS',
-        short_name: 'Gatsby GCMS',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#61045f',
-        display: 'minimal-ui',
+        name: `Gatsby with GraphCMS`,
+        short_name: `Gatsby GCMS`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#61045f`,
+        display: `minimal-ui`,
         icons: [
           {
             src: `/favicons/chrome-192.png`,
