@@ -41,7 +41,7 @@ class ReviewPage extends Component {
 
                   <p>
                     for{' '}
-                    <Link to={`/reviews/${node.record.slug}`}>
+                    <Link to={`/records/${node.record.slug}`}>
                       <em>{node.record.title}</em>
                     </Link>
                     {` `}
