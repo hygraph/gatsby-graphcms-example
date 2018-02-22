@@ -41,12 +41,12 @@ class ReviewPage extends Component {
 
                   <p>
                     for{' '}
-                    <Link to={`#${node.record.slug}`}>
+                    <Link to={`/reviews/${node.record.slug}`}>
                       <em>{node.record.title}</em>
                     </Link>
                     {` `}
                     by{` `}
-                    <Link to={`artists/${node.record.artist.slug}`}>
+                    <Link to={`/artists/${node.record.artist.slug}`}>
                       <strong>{node.record.artist.name}</strong>
                     </Link>
                   </p>
