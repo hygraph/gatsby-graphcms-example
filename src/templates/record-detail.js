@@ -14,7 +14,7 @@ class RecordDetailTemplate extends React.Component {
         <h1 id={record.slug}>{record.title}</h1>
         {record.artist ? (
           <h3>
-            <Link to={`artists/${record.artist.slug}`}>
+            <Link to={`/artists/${record.artist.slug}`}>
               {record.artist.name}
             </Link>
           </h3>
