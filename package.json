@@ -25,7 +25,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format":
-      "prettier-eslint --write \"src/**/*.js\" \"gatsby-node.js\" \"gatsby-config.js\"",
+      "prettier-eslint --write \"src/**/*.js\" \"gatsby-*.js\"",
     "lint": "npm run format",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
