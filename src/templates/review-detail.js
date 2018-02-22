@@ -22,7 +22,7 @@ class ReviewDetailTemplate extends React.Component {
             </Link>
             {` `}
             by{` `}
-            <Link to={`artists/${review.record.artist.slug}`}>
+            <Link to={`/artists/${review.record.artist.slug}`}>
               <strong>{review.record.artist.name}</strong>
             </Link>
           </p>
