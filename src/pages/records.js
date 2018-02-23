@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
 
 class RecordPage extends Component {
   render() {
-    const records = this.props.data.records.edges;
+    const records = this.props.data.records.edges
 
-    console.log(`records: `, records);
+    console.log(`records: `, records)
 
     return (
       <div>
@@ -18,7 +18,9 @@ class RecordPage extends Component {
                 margin: `0 0 2rem`,
                 display: `flex`,
                 flexWrap: `wrap`,
-                width: `100%`
+                alignItems: `center`,
+                justifyContent: `center`,
+                width: `100%`,
               }}
             >
               {records.map(({ node }, i) => (
@@ -26,13 +28,14 @@ class RecordPage extends Component {
                   key={node.id + `nav`}
                   style={{
                     marginBottom: `0.5rem`,
-                    width: `128px`
+                    width: `128px`,
+                    flexBasis: `128px`,
                   }}
                 >
                   <Link
                     to={`/records/` + node.slug}
                     style={{
-                      textDecoration: `none`
+                      textDecoration: `none`,
                     }}
                   >
                     <figure>
@@ -45,7 +48,7 @@ class RecordPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
-                          marginTop: `0.125rem`
+                          marginTop: `0.125rem`,
                         }}
                       />
                       <figcaption>
@@ -53,7 +56,7 @@ class RecordPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
-                            fontSize: `0.5675rem`
+                            fontSize: `0.5675rem`,
                           }}
                         >
                           {node.title}
@@ -67,11 +70,11 @@ class RecordPage extends Component {
           </nav>
         </section>
       </div>
-    );
+    )
   }
 }
 
-export default RecordPage;
+export default RecordPage
 
 export const RecordPageQuery = graphql`
   query getAllRecords {
@@ -93,4 +96,4 @@ export const RecordPageQuery = graphql`
       }
     }
   }
-`;
+`
