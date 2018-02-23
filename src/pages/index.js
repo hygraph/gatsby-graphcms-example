@@ -17,8 +17,15 @@ class IndexPage extends Component {
       <div style={{ marginBottom: `5rem` }}>
         <section className="artists" style={{ textAlign: `center` }}>
           <p>
-            Welcome to your new Gatsby example site using the GraphCMS source
-            plugin.
+            Welcome to your new{` `}
+            <a href="https://github.com/GraphCMS/gatsby-graphcms-example">
+              Gatsby example site
+            </a>
+            {` `}
+            using the{` `}
+            <a href="https://github.com/GraphCMS/gatsby-source-graphcms">
+              GraphCMS source plugin
+            </a>.
           </p>
           <h2>
             <Link to="/artists">Artists</Link>
