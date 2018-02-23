@@ -39,13 +39,15 @@ template {
 }
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip: objects;
   text-decoration-skip-ink: auto;
+  color: rebeccapurple;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #a90cfb;
 }
 abbr[title] {
   border-bottom: none;
