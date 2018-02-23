@@ -40,6 +40,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
+  text-decoration-skip-ink: auto;
 }
 a:active,
 a:hover {
