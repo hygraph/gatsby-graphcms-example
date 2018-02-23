@@ -1,14 +1,15 @@
 # gatsby
 .cache/
 public/
+dist/
 
 # misc
 .DS_Store
 .idea/
 
 # npm dev
-/*.js
-!index.js
+#/*.js
+#!index.js
 package-lock.json
 tests
 

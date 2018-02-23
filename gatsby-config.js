@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby with GraphCMS`,
+    title: `Gatsby with GraphCMS`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -68,18 +68,18 @@ module.exports = {
               body
             }
           }
-        }`,
-      },
+        }`
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby with GraphCMS',
-        short_name: 'Gatsby GCMS',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#61045f',
-        display: 'minimal-ui',
+        name: `Gatsby with GraphCMS`,
+        short_name: `Gatsby GCMS`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#61045f`,
+        display: `minimal-ui`,
         icons: [
           {
             src: `/favicons/chrome-192.png`,
@@ -95,5 +95,5 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`
-  ],
-}
+  ]
+};
