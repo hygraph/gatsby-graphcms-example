@@ -49,6 +49,9 @@ a:hover {
   outline-width: 0;
   color: #a90cfb;
 }
+a:visited {
+  color: #8e0074;
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
