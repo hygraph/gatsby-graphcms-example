@@ -1,15 +1,14 @@
-import React from "react";
-import * as PropTypes from "prop-types";
-import Link from "gatsby-link";
+import React from 'react'
+import * as PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 
 const propTypes = {
-  data: PropTypes.object.isRequired
-};
+  data: PropTypes.object.isRequired,
+}
 
 class ArtistDetailTemplate extends React.Component {
   render() {
-    const { artist } = this.props.data;
-
+    const { artist } = this.props.data
     return (
       <div>
         <h1 id={artist.slug}>{artist.name}</h1>
@@ -36,7 +35,7 @@ class ArtistDetailTemplate extends React.Component {
             style={{
               marginBottom: `1rem`,
               marginTop: `3rem`,
-              textTransform: `uppercase`
+              textTransform: `uppercase`,
             }}
           >
             Records
@@ -46,7 +45,7 @@ class ArtistDetailTemplate extends React.Component {
           <div
             key={record.id}
             style={{
-              marginBottom: `3rem`
+              marginBottom: `3rem`,
             }}
           >
             <h3>
@@ -58,13 +57,13 @@ class ArtistDetailTemplate extends React.Component {
           <Link to="/artists">All Artists</Link>
         </h4>
       </div>
-    );
+    )
   }
 }
 
-ArtistDetailTemplate.propTypes = propTypes;
+ArtistDetailTemplate.propTypes = propTypes
 
-export default ArtistDetailTemplate;
+export default ArtistDetailTemplate
 
 export const ArtistDetailPageQuery = graphql`
   query getArtistById($slug: String!) {
@@ -85,4 +84,4 @@ export const ArtistDetailPageQuery = graphql`
       }
     }
   }
-`;
+`

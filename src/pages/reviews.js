@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import StarRatingComponent from "react-star-rating-component";
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
+import StarRatingComponent from 'react-star-rating-component'
 
 class ReviewPage extends Component {
   render() {
-    const reviews = this.props.data.reviews.edges;
+    const reviews = this.props.data.reviews.edges
 
-    console.log(`reviews: `, reviews);
+    console.log(`reviews: `, reviews)
 
     return (
       <div>
@@ -20,19 +20,19 @@ class ReviewPage extends Component {
                 <li
                   key={node.id + `nav`}
                   style={{
-                    marginBottom: `2rem`
+                    marginBottom: `2rem`,
                   }}
                 >
                   <h3
                     style={{
                       marginBottom: `0.125rem`,
-                      marginTop: `0`
+                      marginTop: `0`,
                     }}
                   >
                     <Link
                       to={`/reviews/` + node.slug}
                       style={{
-                        textDecoration: `none`
+                        textDecoration: `none`,
                       }}
                     >
                       {node.title}
@@ -40,7 +40,7 @@ class ReviewPage extends Component {
                   </h3>
 
                   <p>
-                    for{" "}
+                    for{' '}
                     <Link to={`/records/${node.record.slug}`}>
                       <em>{node.record.title}</em>
                     </Link>
@@ -70,11 +70,11 @@ class ReviewPage extends Component {
           </nav>
         </section>
       </div>
-    );
+    )
   }
 }
 
-export default ReviewPage;
+export default ReviewPage
 
 export const ReviewPageQuery = graphql`
   query getAllReviews {
@@ -98,4 +98,4 @@ export const ReviewPageQuery = graphql`
       }
     }
   }
-`;
+`

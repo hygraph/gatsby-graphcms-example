@@ -20,7 +20,7 @@ class RecordPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
-                width: `100%`
+                width: `100%`,
               }}
             >
               {records.map(({ node }, i) => (
@@ -29,13 +29,13 @@ class RecordPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
-                    flexBasis: `128px`
+                    flexBasis: `128px`,
                   }}
                 >
                   <Link
                     to={`/records/` + node.slug}
                     style={{
-                      textDecoration: `none`
+                      textDecoration: `none`,
                     }}
                   >
                     <figure>
@@ -48,7 +48,7 @@ class RecordPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
-                          marginTop: `0.125rem`
+                          marginTop: `0.125rem`,
                         }}
                       />
                       <figcaption>
@@ -56,7 +56,7 @@ class RecordPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
-                            fontSize: `0.5675rem`
+                            fontSize: `0.5675rem`,
                           }}
                         >
                           {node.title}
@@ -78,7 +78,7 @@ export default RecordPage
 
 export const RecordPageQuery = graphql`
   query getAllRecords {
-    records: allRecord {
+    records: allRecords {
       edges {
         node {
           id
@@ -96,5 +96,4 @@ export const RecordPageQuery = graphql`
       }
     }
   }
-`;
 `
