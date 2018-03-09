@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
 
 class ArtistPage extends Component {
   render() {
-    const artists = this.props.data.artists.edges;
+    const artists = this.props.data.artists.edges
 
-    console.log(`artists: `, artists);
+    console.log(`artists: `, artists)
 
     return (
       <div>
@@ -70,11 +70,11 @@ class ArtistPage extends Component {
           </nav>
         </section>
       </div>
-    );
+    )
   }
 }
 
-export default ArtistPage;
+export default ArtistPage
 
 export const ArtistPageQuery = graphql`
   query getAllArtists {

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
 
 class RecordPage extends Component {
   render() {
-    const records = this.props.data.records.edges;
+    const records = this.props.data.records.edges
 
-    console.log(`records: `, records);
+    console.log(`records: `, records)
 
     return (
       <div>
@@ -70,11 +70,11 @@ class RecordPage extends Component {
           </nav>
         </section>
       </div>
-    );
+    )
   }
 }
 
-export default RecordPage;
+export default RecordPage
 
 export const RecordPageQuery = graphql`
   query getAllRecords {
@@ -97,3 +97,4 @@ export const RecordPageQuery = graphql`
     }
   }
 `;
+`
