@@ -1,7 +1,5 @@
 # gatsby-graphcms-example
 
-Headless fork of [@GraphCMS/gatsby-graphcms-example](https://github.com/GraphCMS/gatsby-graphcms-example)
-
 Example of [@GraphCMS/gatsby-source-graphcms](https://github.com/GraphCMS/gatsby-source-graphcms)
 
 ## Install

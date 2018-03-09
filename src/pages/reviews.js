@@ -78,11 +78,7 @@ export default ReviewPage;
 
 export const ReviewPageQuery = graphql`
   query getAllReviews {
-<<<<<<< HEAD
-    reviews: allReviews {
-=======
     reviews: allReview {
->>>>>>> upstream/master
       edges {
         node {
           id
