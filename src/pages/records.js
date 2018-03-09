@@ -78,7 +78,7 @@ export default RecordPage;
 
 export const RecordPageQuery = graphql`
   query getAllRecords {
-    records: allRecords {
+    records: allRecord {
       edges {
         node {
           id

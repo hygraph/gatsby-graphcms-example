@@ -220,7 +220,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query getAllArtistsRecordsReviews {
-    artists: allArtists {
+    artists: allArtist {
       edges {
         node {
           id
@@ -240,7 +240,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    records: allRecords {
+    records: allRecord {
       edges {
         node {
           id
@@ -267,7 +267,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    reviews: allReviews {
+    reviews: allReview {
       edges {
         node {
           id

@@ -79,7 +79,7 @@ export default ArtistPage;
 
 export const ArtistPageQuery = graphql`
   query getAllArtists {
-    artists: allArtists {
+    artists: allArtist {
       edges {
         node {
           id
