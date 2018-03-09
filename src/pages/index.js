@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
-import Markdown from 'react-markdown'
-import StarRatingComponent from 'react-star-rating-component'
-import Link from 'gatsby-link'
+import React, { Component } from "react";
+import Markdown from "react-markdown";
+import StarRatingComponent from "react-star-rating-component";
+import Link from "gatsby-link";
 
 class IndexPage extends Component {
   render() {
-    const artists = this.props.data.artists.edges
-    const records = this.props.data.records.edges
-    const reviews = this.props.data.reviews.edges
+    const artists = this.props.data.artists.edges;
+    const records = this.props.data.records.edges;
+    const reviews = this.props.data.reviews.edges;
 
-    console.log(`artists: `, artists)
-    console.log(`records: `, records)
-    console.log(`reviews: `, reviews)
+    console.log(`artists: `, artists);
+    console.log(`records: `, records);
+    console.log(`reviews: `, reviews);
 
     return (
       <div style={{ marginBottom: `5rem` }}>
@@ -39,7 +39,11 @@ class IndexPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
+<<<<<<< HEAD
                 width: `100%`,
+=======
+                width: `100%`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
               }}
             >
               {artists.map(({ node }, i) => (
@@ -48,13 +52,21 @@ class IndexPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
+<<<<<<< HEAD
                     flexBasis: `128px`,
+=======
+                    flexBasis: `128px`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                   }}
                 >
                   <Link
                     to={`/artists/` + node.slug}
                     style={{
+<<<<<<< HEAD
                       textDecoration: `none`,
+=======
+                      textDecoration: `none`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                     }}
                   >
                     <figure>
@@ -67,7 +79,11 @@ class IndexPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
+<<<<<<< HEAD
                           marginTop: `0.125rem`,
+=======
+                          marginTop: `0.125rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                         }}
                       />
                       <figcaption>
@@ -75,7 +91,11 @@ class IndexPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
+<<<<<<< HEAD
                             fontSize: `0.5675rem`,
+=======
+                            fontSize: `0.5675rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                           }}
                         >
                           {node.name}
@@ -101,7 +121,11 @@ class IndexPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
+<<<<<<< HEAD
                 width: `100%`,
+=======
+                width: `100%`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
               }}
             >
               {records.map(({ node }, i) => (
@@ -110,13 +134,21 @@ class IndexPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
+<<<<<<< HEAD
                     flexBasis: `128px`,
+=======
+                    flexBasis: `128px`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                   }}
                 >
                   <Link
                     to={`/records/` + node.slug}
                     style={{
+<<<<<<< HEAD
                       textDecoration: `none`,
+=======
+                      textDecoration: `none`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                     }}
                   >
                     <figure>
@@ -129,7 +161,11 @@ class IndexPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
+<<<<<<< HEAD
                           marginTop: `0.125rem`,
+=======
+                          marginTop: `0.125rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                         }}
                       />
                       <figcaption>
@@ -137,7 +173,11 @@ class IndexPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
+<<<<<<< HEAD
                             fontSize: `0.5675rem`,
+=======
+                            fontSize: `0.5675rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                           }}
                         >
                           {node.title}
@@ -162,19 +202,31 @@ class IndexPage extends Component {
                 <li
                   key={node.id + `nav`}
                   style={{
+<<<<<<< HEAD
                     marginBottom: `2rem`,
+=======
+                    marginBottom: `2rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                   }}
                 >
                   <h3
                     style={{
                       marginBottom: `0.125rem`,
+<<<<<<< HEAD
                       marginTop: `0`,
+=======
+                      marginTop: `0`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                     }}
                   >
                     <Link
                       to={`/reviews/` + node.slug}
                       style={{
+<<<<<<< HEAD
                         textDecoration: `none`,
+=======
+                        textDecoration: `none`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                       }}
                     >
                       {node.title}
@@ -182,7 +234,11 @@ class IndexPage extends Component {
                   </h3>
 
                   <p>
+<<<<<<< HEAD
                     for{' '}
+=======
+                    for{" "}
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                     <Link to={`/records/${node.record.slug}`}>
                       <em>{node.record.title}</em>
                     </Link>
@@ -212,15 +268,15 @@ class IndexPage extends Component {
           </nav>
         </section>
       </div>
-    )
+    );
   }
 }
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query getAllArtistsRecordsReviews {
-    artists: allArtists {
+    artists: allArtist {
       edges {
         node {
           id
@@ -240,7 +296,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    records: allRecords {
+    records: allRecord {
       edges {
         node {
           id
@@ -267,7 +323,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    reviews: allReviews {
+    reviews: allReview {
       edges {
         node {
           id
@@ -291,4 +347,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

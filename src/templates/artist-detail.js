@@ -8,7 +8,11 @@ const propTypes = {
 
 class ArtistDetailTemplate extends React.Component {
   render() {
+<<<<<<< HEAD
     const artist = this.props.data.artists;
+=======
+    const { artist } = this.props.data;
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
     return (
       <div>
         <h1 id={artist.slug}>{artist.name}</h1>
@@ -67,7 +71,11 @@ export default ArtistDetailTemplate;
 
 export const ArtistDetailPageQuery = graphql`
   query getArtistById($slug: String!) {
+<<<<<<< HEAD
     artists(slug: { eq: $slug }) {
+=======
+    artist(slug: { eq: $slug }) {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       id
       slug
       name

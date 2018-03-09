@@ -2,7 +2,11 @@
 
 module.exports = `
   {
+<<<<<<< HEAD
     allArtists {
+=======
+    allArtist {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       edges {
         artist: node {
           id
@@ -22,7 +26,11 @@ module.exports = `
         }
       }
     }
+<<<<<<< HEAD
     allRecords {
+=======
+    allRecord {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       edges {
         record: node {
           id
@@ -49,7 +57,11 @@ module.exports = `
         }
       }
     }
+<<<<<<< HEAD
     allReviews {
+=======
+    allReview {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       edges {
         review: node {
           id

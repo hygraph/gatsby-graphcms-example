@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
@@ -6,6 +7,16 @@ class ArtistPage extends Component {
     const artists = this.props.data.artists.edges
 
     console.log(`artists: `, artists)
+=======
+import React, { Component } from "react";
+import Link from "gatsby-link";
+
+class ArtistPage extends Component {
+  render() {
+    const artists = this.props.data.artists.edges;
+
+    console.log(`artists: `, artists);
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
 
     return (
       <div>
@@ -20,7 +31,11 @@ class ArtistPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
+<<<<<<< HEAD
                 width: `100%`,
+=======
+                width: `100%`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
               }}
             >
               {artists.map(({ node }, i) => (
@@ -29,13 +44,22 @@ class ArtistPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
+<<<<<<< HEAD
                     flexBasis: `128px`,
+=======
+
+                    flexBasis: `128px`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                   }}
                 >
                   <Link
                     to={`/artists/` + node.slug}
                     style={{
+<<<<<<< HEAD
                       textDecoration: `none`,
+=======
+                      textDecoration: `none`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                     }}
                   >
                     <figure>
@@ -48,7 +72,11 @@ class ArtistPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
+<<<<<<< HEAD
                           marginTop: `0.125rem`,
+=======
+                          marginTop: `0.125rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                         }}
                       />
                       <figcaption>
@@ -56,7 +84,11 @@ class ArtistPage extends Component {
                           style={{
                             fontSize: `0.5675rem`,
                             marginBottom: `0.125rem`,
+<<<<<<< HEAD
                             marginTop: `0`,
+=======
+                            marginTop: `0`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                           }}
                         >
                           {node.name}
@@ -70,6 +102,7 @@ class ArtistPage extends Component {
           </nav>
         </section>
       </div>
+<<<<<<< HEAD
     )
   }
 }
@@ -79,6 +112,17 @@ export default ArtistPage
 export const ArtistPageQuery = graphql`
   query getAllArtists {
     artists: allArtists {
+=======
+    );
+  }
+}
+
+export default ArtistPage;
+
+export const ArtistPageQuery = graphql`
+  query getAllArtists {
+    artists: allArtist {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       edges {
         node {
           id
@@ -94,4 +138,8 @@ export const ArtistPageQuery = graphql`
       }
     }
   }
+<<<<<<< HEAD
 `
+=======
+`;
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin

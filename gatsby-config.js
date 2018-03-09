@@ -8,6 +8,7 @@ module.exports = {
       resolve: `gatsby-source-graphcms`,
       options: {
         endpoint: `https://api.graphcms.com/simple/v1/vinylbase`,
+<<<<<<< HEAD
         query: `{
           allArtists {
             id
@@ -69,6 +70,9 @@ module.exports = {
             }
           }
         }`
+=======
+        query: require('./gatsby/configQuery')
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       }
     },
     {

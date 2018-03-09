@@ -78,7 +78,11 @@ export default ReviewPage;
 
 export const ReviewPageQuery = graphql`
   query getAllReviews {
+<<<<<<< HEAD
     reviews: allReviews {
+=======
+    reviews: allReview {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       edges {
         node {
           id

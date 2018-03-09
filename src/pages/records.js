@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
@@ -6,6 +7,16 @@ class RecordPage extends Component {
     const records = this.props.data.records.edges
 
     console.log(`records: `, records)
+=======
+import React, { Component } from "react";
+import Link from "gatsby-link";
+
+class RecordPage extends Component {
+  render() {
+    const records = this.props.data.records.edges;
+
+    console.log(`records: `, records);
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
 
     return (
       <div>
@@ -20,7 +31,11 @@ class RecordPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
+<<<<<<< HEAD
                 width: `100%`,
+=======
+                width: `100%`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
               }}
             >
               {records.map(({ node }, i) => (
@@ -29,13 +44,21 @@ class RecordPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
+<<<<<<< HEAD
                     flexBasis: `128px`,
+=======
+                    flexBasis: `128px`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                   }}
                 >
                   <Link
                     to={`/records/` + node.slug}
                     style={{
+<<<<<<< HEAD
                       textDecoration: `none`,
+=======
+                      textDecoration: `none`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                     }}
                   >
                     <figure>
@@ -48,7 +71,11 @@ class RecordPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
+<<<<<<< HEAD
                           marginTop: `0.125rem`,
+=======
+                          marginTop: `0.125rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                         }}
                       />
                       <figcaption>
@@ -56,7 +83,11 @@ class RecordPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
+<<<<<<< HEAD
                             fontSize: `0.5675rem`,
+=======
+                            fontSize: `0.5675rem`
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
                           }}
                         >
                           {node.title}
@@ -70,6 +101,7 @@ class RecordPage extends Component {
           </nav>
         </section>
       </div>
+<<<<<<< HEAD
     )
   }
 }
@@ -79,6 +111,17 @@ export default RecordPage
 export const RecordPageQuery = graphql`
   query getAllRecords {
     records: allRecords {
+=======
+    );
+  }
+}
+
+export default RecordPage;
+
+export const RecordPageQuery = graphql`
+  query getAllRecords {
+    records: allRecord {
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
       edges {
         node {
           id
@@ -96,4 +139,8 @@ export const RecordPageQuery = graphql`
       }
     }
   }
+<<<<<<< HEAD
 `
+=======
+`;
+>>>>>>> upstream/feature/use-@next-graphcms-source-plugin
