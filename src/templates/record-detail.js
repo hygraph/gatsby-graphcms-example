@@ -8,7 +8,11 @@ const propTypes = {
 
 class RecordDetailTemplate extends React.Component {
   render() {
+<<<<<<< HEAD
     const { record } = this.props.data;
+=======
+    const record = this.props.data.records;
+>>>>>>> parent of ea90a1e... merge fun
     return (
       <div>
         <h1 id={record.slug}>{record.title}</h1>
@@ -96,7 +100,11 @@ export default RecordDetailTemplate;
 
 export const RecordDetailPageQuery = graphql`
   query getRecordById($slug: String!) {
+<<<<<<< HEAD
     record(slug: { eq: $slug }) {
+=======
+    records(slug: { eq: $slug }) {
+>>>>>>> parent of ea90a1e... merge fun
       id
       slug
       title

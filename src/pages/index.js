@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import Markdown from "react-markdown";
-import StarRatingComponent from "react-star-rating-component";
-import Link from "gatsby-link";
+import React, { Component } from 'react'
+import Markdown from 'react-markdown'
+import StarRatingComponent from 'react-star-rating-component'
+import Link from 'gatsby-link'
 
 class IndexPage extends Component {
   render() {
-    const artists = this.props.data.artists.edges;
-    const records = this.props.data.records.edges;
-    const reviews = this.props.data.reviews.edges;
+    const artists = this.props.data.artists.edges
+    const records = this.props.data.records.edges
+    const reviews = this.props.data.reviews.edges
 
-    console.log(`artists: `, artists);
-    console.log(`records: `, records);
-    console.log(`reviews: `, reviews);
+    console.log(`artists: `, artists)
+    console.log(`records: `, records)
+    console.log(`reviews: `, reviews)
 
     return (
       <div style={{ marginBottom: `5rem` }}>
@@ -39,7 +39,7 @@ class IndexPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
-                width: `100%`
+                width: `100%`,
               }}
             >
               {artists.map(({ node }, i) => (
@@ -48,13 +48,13 @@ class IndexPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
-                    flexBasis: `128px`
+                    flexBasis: `128px`,
                   }}
                 >
                   <Link
                     to={`/artists/` + node.slug}
                     style={{
-                      textDecoration: `none`
+                      textDecoration: `none`,
                     }}
                   >
                     <figure>
@@ -67,7 +67,7 @@ class IndexPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
-                          marginTop: `0.125rem`
+                          marginTop: `0.125rem`,
                         }}
                       />
                       <figcaption>
@@ -75,7 +75,7 @@ class IndexPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
-                            fontSize: `0.5675rem`
+                            fontSize: `0.5675rem`,
                           }}
                         >
                           {node.name}
@@ -101,7 +101,7 @@ class IndexPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
-                width: `100%`
+                width: `100%`,
               }}
             >
               {records.map(({ node }, i) => (
@@ -110,13 +110,13 @@ class IndexPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
-                    flexBasis: `128px`
+                    flexBasis: `128px`,
                   }}
                 >
                   <Link
                     to={`/records/` + node.slug}
                     style={{
-                      textDecoration: `none`
+                      textDecoration: `none`,
                     }}
                   >
                     <figure>
@@ -129,7 +129,7 @@ class IndexPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
-                          marginTop: `0.125rem`
+                          marginTop: `0.125rem`,
                         }}
                       />
                       <figcaption>
@@ -137,7 +137,7 @@ class IndexPage extends Component {
                           style={{
                             marginBottom: `0.125rem`,
                             marginTop: `0`,
-                            fontSize: `0.5675rem`
+                            fontSize: `0.5675rem`,
                           }}
                         >
                           {node.title}
@@ -162,19 +162,19 @@ class IndexPage extends Component {
                 <li
                   key={node.id + `nav`}
                   style={{
-                    marginBottom: `2rem`
+                    marginBottom: `2rem`,
                   }}
                 >
                   <h3
                     style={{
                       marginBottom: `0.125rem`,
-                      marginTop: `0`
+                      marginTop: `0`,
                     }}
                   >
                     <Link
                       to={`/reviews/` + node.slug}
                       style={{
-                        textDecoration: `none`
+                        textDecoration: `none`,
                       }}
                     >
                       {node.title}
@@ -182,7 +182,7 @@ class IndexPage extends Component {
                   </h3>
 
                   <p>
-                    for{" "}
+                    for{' '}
                     <Link to={`/records/${node.record.slug}`}>
                       <em>{node.record.title}</em>
                     </Link>
@@ -212,15 +212,15 @@ class IndexPage extends Component {
           </nav>
         </section>
       </div>
-    );
+    )
   }
 }
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query getAllArtistsRecordsReviews {
-    artists: allArtist {
+    artists: allArtists {
       edges {
         node {
           id
@@ -240,7 +240,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    records: allRecord {
+    records: allRecords {
       edges {
         node {
           id
@@ -267,7 +267,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    reviews: allReview {
+    reviews: allReviews {
       edges {
         node {
           id
@@ -291,4 +291,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

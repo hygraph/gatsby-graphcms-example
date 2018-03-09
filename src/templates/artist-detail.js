@@ -8,7 +8,11 @@ const propTypes = {
 
 class ArtistDetailTemplate extends React.Component {
   render() {
+<<<<<<< HEAD
     const { artist } = this.props.data;
+=======
+    const artist = this.props.data.artists;
+>>>>>>> parent of ea90a1e... merge fun
     return (
       <div>
         <h1 id={artist.slug}>{artist.name}</h1>
@@ -67,7 +71,11 @@ export default ArtistDetailTemplate;
 
 export const ArtistDetailPageQuery = graphql`
   query getArtistById($slug: String!) {
+<<<<<<< HEAD
     artist(slug: { eq: $slug }) {
+=======
+    artists(slug: { eq: $slug }) {
+>>>>>>> parent of ea90a1e... merge fun
       id
       slug
       name
