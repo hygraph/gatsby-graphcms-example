@@ -3347,7 +3347,7 @@ gatsby-react-router-scroll@^1.0.13:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-graphcms@^1.0.0-alpha.1:
+gatsby-source-graphcms@1.0.0-alpha.1:
   version "1.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/gatsby-source-graphcms/-/gatsby-source-graphcms-1.0.0-alpha.1.tgz#6f7a6798eb798d301767f74de4bb3f19392a1336"
   dependencies:
