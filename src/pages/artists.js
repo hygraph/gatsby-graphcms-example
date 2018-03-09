@@ -29,7 +29,6 @@ class ArtistPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
-
                     flexBasis: `128px`
                   }}
                 >
