@@ -25,7 +25,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           reject(result.errors)
         }
 
-        const artists = result.data.allArtist.edges
+        const artists = result.data.allArtists.edges
         console.log(`artists: `, artists)
         artists.forEach(node => {
           console.log(`createPages node: `, node)
@@ -40,7 +40,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           })
         })
 
-        const records = result.data.allRecord.edges
+        const records = result.data.allRecords.edges
         console.log(`records: `, records)
         records.forEach(node => {
           console.log(`createPages node: `, node)
@@ -55,7 +55,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           })
         })
 
-        const reviews = result.data.allReview.edges
+        const reviews = result.data.allReviews.edges
         console.log(`reviews: `, reviews)
         reviews.forEach(node => {
           console.log(`createPages node: `, node)
