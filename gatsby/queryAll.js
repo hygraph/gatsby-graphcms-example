@@ -2,7 +2,7 @@
 
 module.exports = `
   {
-    allArtists {
+    allArtist {
       edges {
         artist: node {
           id
@@ -22,7 +22,7 @@ module.exports = `
         }
       }
     }
-    allRecords {
+    allRecord {
       edges {
         record: node {
           id
@@ -49,7 +49,7 @@ module.exports = `
         }
       }
     }
-    allReviews {
+    allReview {
       edges {
         review: node {
           id

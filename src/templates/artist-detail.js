@@ -8,7 +8,7 @@ const propTypes = {
 
 class ArtistDetailTemplate extends React.Component {
   render() {
-    const artist = this.props.data.artists;
+    const { artist } = this.props.data;
     return (
       <div>
         <h1 id={artist.slug}>{artist.name}</h1>
@@ -67,7 +67,7 @@ export default ArtistDetailTemplate;
 
 export const ArtistDetailPageQuery = graphql`
   query getArtistById($slug: String!) {
-    artists(slug: { eq: $slug }) {
+    artist(slug: { eq: $slug }) {
       id
       slug
       name

@@ -78,7 +78,7 @@ export default ReviewPage;
 
 export const ReviewPageQuery = graphql`
   query getAllReviews {
-    reviews: allReviews {
+    reviews: allReview {
       edges {
         node {
           id

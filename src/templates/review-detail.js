@@ -10,7 +10,7 @@ const propTypes = {
 
 class ReviewDetailTemplate extends React.Component {
   render() {
-    const review = this.props.data.reviews;
+    const { review } = this.props.data;
     return (
       <div style={{ marginBottom: `4rem` }}>
         <article key={review.id} style={{ marginBottom: `3rem` }}>
@@ -74,7 +74,7 @@ export default ReviewDetailTemplate;
 
 export const ReviewDetailPageQuery = graphql`
   query getReviewById($slug: String!) {
-    reviews(slug: { eq: $slug }) {
+    review(slug: { eq: $slug }) {
       id
       slug
       createdAt
