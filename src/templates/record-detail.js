@@ -1,14 +1,14 @@
-import React from 'react'
-import * as PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import React from "react";
+import * as PropTypes from "prop-types";
+import Link from "gatsby-link";
 
 const propTypes = {
-  data: PropTypes.object.isRequired,
-}
+  data: PropTypes.object.isRequired
+};
 
 class RecordDetailTemplate extends React.Component {
   render() {
-    const { record } = this.props.data
+    const { record } = this.props.data;
     return (
       <div>
         <h1 id={record.slug}>{record.title}</h1>
@@ -51,7 +51,7 @@ class RecordDetailTemplate extends React.Component {
             style={{
               marginBottom: `1.5rem`,
               marginTop: `3rem`,
-              textTransform: `uppercase`,
+              textTransform: `uppercase`
             }}
           >
             Reviews
@@ -61,7 +61,7 @@ class RecordDetailTemplate extends React.Component {
           <div
             key={review.id}
             style={{
-              marginBottom: `2.5rem`,
+              marginBottom: `2.5rem`
             }}
           >
             <p>
@@ -80,19 +80,19 @@ class RecordDetailTemplate extends React.Component {
           style={{
             marginBottom: `3rem`,
             marginTop: `2.5rem`,
-            textTransform: `uppercase`,
+            textTransform: `uppercase`
           }}
         >
           <Link to="/records">All Records</Link>
         </h4>
       </div>
-    )
+    );
   }
 }
 
-RecordDetailTemplate.propTypes = propTypes
+RecordDetailTemplate.propTypes = propTypes;
 
-export default RecordDetailTemplate
+export default RecordDetailTemplate;
 
 export const RecordDetailPageQuery = graphql`
   query getRecordById($slug: String!) {
@@ -120,4 +120,4 @@ export const RecordDetailPageQuery = graphql`
       }
     }
   }
-`
+`;
