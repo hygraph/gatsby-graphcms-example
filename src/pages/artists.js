@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import React, { Component } from "react";
+import Link from "gatsby-link";
 
 class ArtistPage extends Component {
   render() {
-    const artists = this.props.data.artists.edges
+    const artists = this.props.data.artists.edges;
 
-    console.log(`artists: `, artists)
+    console.log(`artists: `, artists);
 
     return (
       <div>
@@ -20,7 +20,7 @@ class ArtistPage extends Component {
                 flexWrap: `wrap`,
                 alignItems: `center`,
                 justifyContent: `center`,
-                width: `100%`,
+                width: `100%`
               }}
             >
               {artists.map(({ node }, i) => (
@@ -29,13 +29,14 @@ class ArtistPage extends Component {
                   style={{
                     marginBottom: `0.5rem`,
                     width: `128px`,
-                    flexBasis: `128px`,
+
+                    flexBasis: `128px`
                   }}
                 >
                   <Link
                     to={`/artists/` + node.slug}
                     style={{
-                      textDecoration: `none`,
+                      textDecoration: `none`
                     }}
                   >
                     <figure>
@@ -48,7 +49,7 @@ class ArtistPage extends Component {
                         width="112"
                         style={{
                           marginBottom: `0`,
-                          marginTop: `0.125rem`,
+                          marginTop: `0.125rem`
                         }}
                       />
                       <figcaption>
@@ -56,7 +57,7 @@ class ArtistPage extends Component {
                           style={{
                             fontSize: `0.5675rem`,
                             marginBottom: `0.125rem`,
-                            marginTop: `0`,
+                            marginTop: `0`
                           }}
                         >
                           {node.name}
@@ -70,15 +71,15 @@ class ArtistPage extends Component {
           </nav>
         </section>
       </div>
-    )
+    );
   }
 }
 
-export default ArtistPage
+export default ArtistPage;
 
 export const ArtistPageQuery = graphql`
   query getAllArtists {
-    artists: allArtists {
+    artists: allArtist {
       edges {
         node {
           id
@@ -94,4 +95,4 @@ export const ArtistPageQuery = graphql`
       }
     }
   }
-`
+`;

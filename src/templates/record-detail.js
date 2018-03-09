@@ -8,7 +8,7 @@ const propTypes = {
 
 class RecordDetailTemplate extends React.Component {
   render() {
-    const record = this.props.data.records;
+    const { record } = this.props.data;
     return (
       <div>
         <h1 id={record.slug}>{record.title}</h1>
@@ -96,7 +96,7 @@ export default RecordDetailTemplate;
 
 export const RecordDetailPageQuery = graphql`
   query getRecordById($slug: String!) {
-    records(slug: { eq: $slug }) {
+    record(slug: { eq: $slug }) {
       id
       slug
       title
