@@ -18,7 +18,7 @@
   "license": "MIT",
   "author": "Rafael Cordones <rafael@cordones.me>",
   "dependencies": {
-    "gatsby": "1.9.244",
+    "gatsby": "1.9.246",
     "gatsby-link": "1.6.40",
     "gatsby-plugin-manifest": "1.0.15",
     "gatsby-plugin-offline": "1.0.15",
