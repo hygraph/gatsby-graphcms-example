@@ -3471,9 +3471,9 @@ gatsby-source-graphcms@1.0.0-alpha.1:
     pluralize "^7.0.0"
     ramda "^0.25.0"
 
-gatsby@1.9.248:
-  version "1.9.248"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.248.tgz#1bcc7e4267682cc779b8b5c33d8fb29f31d5f01b"
+gatsby@1.9.249:
+  version "1.9.249"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.249.tgz#ba55e760f39eec57f88d94311b7a5f48f79fe263"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
