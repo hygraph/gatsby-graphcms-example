@@ -3231,9 +3231,9 @@ gatsby-1-config-extract-plugin@^1.0.3:
     babel-runtime "^6.26.0"
     extract-text-webpack-plugin "^1.0.1"
 
-gatsby-cli@^1.1.53:
-  version "1.1.53"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.53.tgz#fac43e1a25c5caab05498755810961233a770c96"
+gatsby-cli@^1.1.57:
+  version "1.1.57"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.57.tgz#0a17684006f879775f5a0aa5173985a035b38d45"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-runtime "^6.26.0"
@@ -3270,17 +3270,17 @@ gatsby-module-loader@^1.0.11:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-manifest@1.0.22:
-  version "1.0.22"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.22.tgz#0b5088f3913d310160af759ba92bfbe819e6ad6a"
+gatsby-plugin-manifest@1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.24.tgz#714f97dd361ddf7ec6c5ef00b8accc70d3a22ba0"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
     sharp "^0.20.1"
 
-gatsby-plugin-offline@1.0.16:
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.16.tgz#d3b92a9dc427cacb106dddf336bda68456ea8126"
+gatsby-plugin-offline@1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.18.tgz#2ee2a24d2f69fcc43a015132f07141b69295318d"
   dependencies:
     babel-runtime "^6.26.0"
     sw-precache "^5.0.0"
@@ -3308,9 +3308,9 @@ gatsby-source-graphcms@1.0.0-alpha.1:
     pluralize "^7.0.0"
     ramda "^0.25.0"
 
-gatsby@1.9.262:
-  version "1.9.262"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.262.tgz#6d1281ffc4521e3d97cd048efcfef3a1fe21ee15"
+gatsby@1.9.266:
+  version "1.9.266"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.266.tgz#73b6a1d50effef0d4036dc4a5c3c020059dd276f"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3352,7 +3352,7 @@ gatsby@1.9.262:
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.11"
     gatsby-1-config-extract-plugin "^1.0.3"
-    gatsby-cli "^1.1.53"
+    gatsby-cli "^1.1.57"
     gatsby-link "^1.6.44"
     gatsby-module-loader "^1.0.11"
     gatsby-react-router-scroll "^1.0.17"
