@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "gatsby-graphcms-example",
   "description": "Gatsby example site using the GraphCMS source plugin",
   "keywords": [
@@ -16,7 +16,12 @@
     "url": "https://github.com/GraphCMS/gatsby-graphcms-example.git"
   },
   "license": "MIT",
-  "author": "Rafael Cordones <rafael@cordones.me>",
+  "contributors": [
+    "Rafael Cordones <rafael@cordones.me>",
+    "Hugo Meissner <hugomeissner@icloud.com>",
+    "Angel Piscola <angelpiscola@gmail.com>",
+    "Ricky de Laveaga (https://rdela.com)"
+  ],
   "dependencies": {
     "gatsby": "1.9.272",
     "gatsby-link": "1.6.44",
@@ -24,8 +29,8 @@
     "gatsby-plugin-offline": "1.0.18",
     "gatsby-plugin-react-helmet": "2.0.11",
     "gatsby-source-graphcms": "1.0.0-alpha.2",
+    "gatsby-transformer-remark": "1.7.44",
     "react-helmet": "5.2.0",
-    "react-markdown": "3.3.4",
     "react-star-rating-component": "1.4.1"
   },
   "scripts": {
