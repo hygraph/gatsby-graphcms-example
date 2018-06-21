@@ -1,8 +1,21 @@
 const path = require(`path`);
 const queryAll = require(`./gatsby/queryAll.js`);
 
-exports.onCreateNode = ({ node }) => {
-  console.log(`onCreateNode:`, node.internal.type);
+exports.onCreateNode = ({ node, boundActionCreators }) => {
+  const { createNode } = boundActionCreators;
+  if (node.internal.type === `Review`) {
+    createNode({
+      id: `md-${node.id}`,
+      parent: node.id,
+      children: [],
+      internal: {
+        type: `${node.internal.type}Markdown`,
+        mediaType: `text/markdown`,
+        content: node.review,
+        contentDigest: node.internal.contentDigest
+      }
+    });
+  }
 };
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -26,37 +39,38 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
 
         const artists = result.data.allArtist.edges;
-        artists.forEach(node => {
-          const path = `artists/` + node.artist.slug;
+        artists.forEach(({ artist }) => {
+          const path = `artists/` + artist.slug;
           createPage({
             path,
             component: artistDetailPageTemplate,
             context: {
-              slug: node.artist.slug
+              id: artist.id
             }
           });
         });
 
         const records = result.data.allRecord.edges;
-        records.forEach(node => {
-          const path = `records/` + node.record.slug;
+        records.forEach(({ record }) => {
+          const path = `records/` + record.slug;
           createPage({
             path,
             component: recordDetailPageTemplate,
             context: {
-              slug: node.record.slug
+              id: record.id
             }
           });
         });
 
         const reviews = result.data.allReview.edges;
-        reviews.forEach(node => {
-          const path = `reviews/` + node.review.slug;
+        reviews.forEach(({ review }) => {
+          const path = `reviews/` + review.slug;
           createPage({
             path,
             component: reviewDetailPageTemplate,
             context: {
-              slug: node.review.slug
+              id: review.id,
+              mdid: `md-` + review.id
             }
           });
         });

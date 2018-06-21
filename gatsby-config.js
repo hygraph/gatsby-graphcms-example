@@ -11,6 +11,7 @@ module.exports = {
         query: require("./gatsby/configQuery")
       }
     },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

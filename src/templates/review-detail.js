@@ -1,7 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
 import Link from "gatsby-link";
-import Markdown from "react-markdown";
 import StarRatingComponent from "react-star-rating-component";
 
 const propTypes = {
@@ -10,7 +9,7 @@ const propTypes = {
 
 class ReviewDetailTemplate extends React.Component {
   render() {
-    const { review } = this.props.data;
+    const { review, reviewMarkdown } = this.props.data;
     return (
       <div style={{ marginBottom: `4rem` }}>
         <article key={review.id} style={{ marginBottom: `3rem` }}>
@@ -40,10 +39,12 @@ class ReviewDetailTemplate extends React.Component {
               />
             </div>
           )}
-          {review.review && (
-            <div>
-              <Markdown source={review.review} escapeHtml={false} />
-            </div>
+          {reviewMarkdown.childMarkdownRemark.html && (
+            <div
+              dangerouslySetInnerHTML={{
+                __html: reviewMarkdown.childMarkdownRemark.html
+              }}
+            />
           )}
           {review.comments.length ? (
             <div style={{ marginTop: `4rem` }}>
@@ -73,8 +74,8 @@ ReviewDetailTemplate.propTypes = propTypes;
 export default ReviewDetailTemplate;
 
 export const ReviewDetailPageQuery = graphql`
-  query getReviewById($slug: String!) {
-    review(slug: { eq: $slug }) {
+  query getReviewById($id: String!, $mdid: String!) {
+    review(id: { eq: $id }) {
       id
       slug
       createdAt
@@ -91,6 +92,12 @@ export const ReviewDetailPageQuery = graphql`
       rating
       comments {
         body
+      }
+    }
+    reviewMarkdown(id: { eq: $mdid }) {
+      id
+      childMarkdownRemark {
+        html
       }
     }
   }
