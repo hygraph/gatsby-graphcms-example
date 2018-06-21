@@ -45,7 +45,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path,
             component: artistDetailPageTemplate,
             context: {
-              id: node.artist.id
+              id: artist.id
             }
           });
         });
@@ -57,7 +57,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path,
             component: recordDetailPageTemplate,
             context: {
-              id: node.record.id
+              id: record.id
             }
           });
         });
@@ -69,8 +69,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path,
             component: reviewDetailPageTemplate,
             context: {
-              id: node.review.id,
-              mdid: `md-` + node.review.id
+              id: review.id,
+              mdid: `md-` + review.id
             }
           });
         });
