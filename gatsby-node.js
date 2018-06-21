@@ -39,8 +39,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
 
         const artists = result.data.allArtist.edges;
-        artists.forEach(node => {
-          const path = `artists/` + node.artist.slug;
+        artists.forEach(({ artist }) => {
+          const path = `artists/` + artist.slug;
           createPage({
             path,
             component: artistDetailPageTemplate,
@@ -51,8 +51,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         });
 
         const records = result.data.allRecord.edges;
-        records.forEach(node => {
-          const path = `records/` + node.record.slug;
+        records.forEach(({ record }) => {
+          const path = `records/` + record.slug;
           createPage({
             path,
             component: recordDetailPageTemplate,
@@ -63,8 +63,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         });
 
         const reviews = result.data.allReview.edges;
-        reviews.forEach(node => {
-          const path = `reviews/` + node.review.slug;
+        reviews.forEach(({ review }) => {
+          const path = `reviews/` + review.slug;
           createPage({
             path,
             component: reviewDetailPageTemplate,
