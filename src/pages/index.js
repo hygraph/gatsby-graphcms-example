@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Markdown from "react-markdown";
 import StarRatingComponent from "react-star-rating-component";
 import Link from "gatsby-link";
 
@@ -8,11 +7,6 @@ class IndexPage extends Component {
     const artists = this.props.data.artists.edges;
     const records = this.props.data.records.edges;
     const reviews = this.props.data.reviews.edges;
-
-    console.log(`artists: `, artists);
-    console.log(`records: `, records);
-    console.log(`reviews: `, reviews);
-
     return (
       <div style={{ marginBottom: `5rem` }}>
         <section className="artists" style={{ textAlign: `center` }}>
