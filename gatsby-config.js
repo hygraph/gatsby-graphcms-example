@@ -8,10 +8,9 @@ module.exports = {
       resolve: `gatsby-source-graphcms`,
       options: {
         endpoint: `https://api.graphcms.com/simple/v1/vinylbase`,
-        query: require("./gatsby/configQuery")
+        query: require('./gatsby/configQuery')
       }
     },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
