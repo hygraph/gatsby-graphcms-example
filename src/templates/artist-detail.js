@@ -66,8 +66,8 @@ ArtistDetailTemplate.propTypes = propTypes;
 export default ArtistDetailTemplate;
 
 export const ArtistDetailPageQuery = graphql`
-  query getArtistById($id: String!) {
-    artist(id: { eq: $id }) {
+  query getArtistById($slug: String!) {
+    artist(slug: { eq: $slug }) {
       id
       slug
       name

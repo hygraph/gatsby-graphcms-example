@@ -4,6 +4,9 @@ import Link from "gatsby-link";
 class RecordPage extends Component {
   render() {
     const records = this.props.data.records.edges;
+
+    console.log(`records: `, records);
+
     return (
       <div>
         <section className="records" style={{ textAlign: `center` }}>

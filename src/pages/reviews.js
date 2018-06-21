@@ -5,6 +5,9 @@ import StarRatingComponent from "react-star-rating-component";
 class ReviewPage extends Component {
   render() {
     const reviews = this.props.data.reviews.edges;
+
+    console.log(`reviews: `, reviews);
+
     return (
       <div>
         <section className="reviews" style={{ textAlign: `center` }}>

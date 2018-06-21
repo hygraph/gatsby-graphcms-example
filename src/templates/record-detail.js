@@ -95,8 +95,8 @@ RecordDetailTemplate.propTypes = propTypes;
 export default RecordDetailTemplate;
 
 export const RecordDetailPageQuery = graphql`
-  query getRecordById($id: String!) {
-    record(id: { eq: $id }) {
+  query getRecordById($slug: String!) {
+    record(slug: { eq: $slug }) {
       id
       slug
       title

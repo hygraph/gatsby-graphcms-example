@@ -1,21 +1,8 @@
 const path = require(`path`);
 const queryAll = require(`./gatsby/queryAll.js`);
 
-exports.onCreateNode = ({ node, boundActionCreators }) => {
-  const { createNode } = boundActionCreators;
-  if (node.internal.type === `Review`) {
-    createNode({
-      id: `md-${node.id}`,
-      parent: node.id,
-      children: [],
-      internal: {
-        type: `${node.internal.type}Markdown`,
-        mediaType: `text/markdown`,
-        content: node.review,
-        contentDigest: node.internal.contentDigest
-      }
-    });
-  }
+exports.onCreateNode = ({ node }) => {
+  console.log(`onCreateNode:`, node.internal.type);
 };
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -45,7 +32,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path,
             component: artistDetailPageTemplate,
             context: {
-              id: node.artist.id
+              slug: artist.slug
             }
           });
         });
@@ -57,7 +44,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path,
             component: recordDetailPageTemplate,
             context: {
-              id: node.record.id
+              slug: record.slug
             }
           });
         });
@@ -69,8 +56,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             path,
             component: reviewDetailPageTemplate,
             context: {
-              id: node.review.id,
-              mdid: `md-` + node.review.id
+              slug: review.slug
             }
           });
         });
