@@ -4,9 +4,6 @@ import Link from "gatsby-link";
 class ArtistPage extends Component {
   render() {
     const artists = this.props.data.artists.edges;
-
-    console.log(`artists: `, artists);
-
     return (
       <div>
         <section className="artists" style={{ textAlign: `center` }}>
