@@ -4609,19 +4609,19 @@ gatsby-link@2.0.4, gatsby-link@^2.0.4:
     prop-types "^15.6.1"
     ric "^1.3.0"
 
-gatsby-plugin-manifest@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.5.tgz#511b604dd92d7917d06a338b338b63d621282c23"
-  integrity sha512-iemgD5bczubqhkH6J66Sr9rGrC0i0V0vIox9xHwBdEy/6NC5yPSBntxfIK/Zknd2XMOrQ3ndQaUtYKipOzPLJw==
+gatsby-plugin-manifest@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.6.tgz#7ddf5e14c1b6bd4d5b434598305c25f67a5d3e66"
+  integrity sha512-FKcNPhMWCwDpQgqsQ4PaxdHE8U/Lfn1Y9xFhsUngLIkxJh+uCHKe5yeipFXFB+Z7m+wQnjBPf4dwQntm+eXUvw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
-    sharp "^0.20.2"
+    sharp "^0.21.0"
 
-gatsby-plugin-offline@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.8.tgz#1dc9ad57aee70137a17d79e75d7e26e9f471ae3b"
-  integrity sha512-8fp9T1/t7rUC0AVmruOtG397/tvhQsCECKzDsAX1MICIGzZ6TRjiyfod0oepyofpGD6GCnXcRkQdG9bRGHXIQQ==
+gatsby-plugin-offline@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.9.tgz#ca4cb733a3fd6c411da347dbfa7f9f1ceb5fe2e1"
+  integrity sha512-uai/89BbV6OPCFFFc0Ex1oHKP72fxmBqutudDHVqbCWIza5lYNs0uS3vNDSBfv3/852c1Z0hTaG8r9/e/8XznA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     cheerio "^1.0.0-rc.2"
@@ -4668,16 +4668,16 @@ gatsby-source-graphcms@1.0.0-alpha.3:
     pluralize "^7.0.0"
     ramda "^0.25.0"
 
-gatsby-transformer-remark@2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.8.tgz#6f34d85174bb5c35e3e987f4a008e444c6c37646"
-  integrity sha512-gN0JjcmJ6eeZojionP90b2smdDVuJu8zw74KBFwaXnLSEQE7F5ONkAUmSGdo0WFZXifjAoddI6ABXBTtPW52WA==
+gatsby-transformer-remark@2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.1.9.tgz#29241e8c7c56bc93ea5c5921afc8e22fc0880af8"
+  integrity sha512-EdFHQKfp25ExI+UMQIjnFJMkC9VWw5XykQISGewprk1vtBXYzT+0vAvsnZ3pZadZWEoDuk19c5jTHQJXskN/pQ==
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
     gray-matter "^4.0.0"
     hast-util-raw "^4.0.0"
-    hast-util-to-html "^3.0.0"
+    hast-util-to-html "^4.0.0"
     lodash "^4.17.10"
     mdast-util-to-hast "^3.0.0"
     mdast-util-toc "^2.0.1"
@@ -4693,10 +4693,10 @@ gatsby-transformer-remark@2.1.8:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.3.0"
 
-gatsby@2.0.29:
-  version "2.0.29"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.29.tgz#771663dbb3c469243ad3585bf8fdac7a41bdc9bd"
-  integrity sha512-VH4vY0749YykExdxt4PJ/pf6ZpH58XGDJdiYt5ue67htiBb6LaH8KxGWhO7/cvxr6TeDnKGvZnOwoJg/0aAoGA==
+gatsby@2.0.30:
+  version "2.0.30"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.0.30.tgz#ac9ec3b904454fb503b2b8bb445d2fa4509a1a40"
+  integrity sha512-eB7czrs0pmjSPJ23OBNkYgLT0FdMDBJlHsMt3b1hJoWYOftwfjRTVskYCVfDonozullzQm2uIvp1bGpUzskpTw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5266,18 +5266,17 @@ hast-util-raw@^4.0.0:
     xtend "^4.0.1"
     zwitch "^1.0.0"
 
-hast-util-to-html@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-3.1.0.tgz#882c99849e40130e991c042e456d453d95c36cff"
-  integrity sha1-iCyZhJ5AEw6ZHAQuRW1FPZXDbP8=
+hast-util-to-html@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-4.0.1.tgz#3666b05afb62bd69f8f5e6c94db04dea19438e2a"
+  integrity sha512-2emzwyf0xEsc4TBIPmDJmBttIw8R4SXAJiJZoiRR/s47ODYWgOqNoDbf2SJAbMbfNdFWMiCSOrI3OVnX6Qq2Mg==
   dependencies:
     ccount "^1.0.0"
     comma-separated-tokens "^1.0.1"
     hast-util-is-element "^1.0.0"
     hast-util-whitespace "^1.0.0"
     html-void-elements "^1.0.0"
-    kebab-case "^1.0.0"
-    property-information "^3.1.0"
+    property-information "^4.0.0"
     space-separated-tokens "^1.0.0"
     stringify-entities "^1.0.1"
     unist-util-is "^2.0.0"
@@ -6262,11 +6261,6 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-kebab-case@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/kebab-case/-/kebab-case-1.0.0.tgz#3f9e4990adcad0c686c0e701f7645868f75f91eb"
-  integrity sha1-P55JkK3K0MaGwOcB92RYaPdfkes=
-
 kebab-hash@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/kebab-hash/-/kebab-hash-0.1.2.tgz#dfb7949ba34d8e70114ea7d83e266e5e2a4abaac"
@@ -7034,7 +7028,7 @@ name-all-modules-plugin@^1.0.1:
   resolved "https://registry.yarnpkg.com/name-all-modules-plugin/-/name-all-modules-plugin-1.0.1.tgz#0abfb6ad835718b9fb4def0674e06657a954375c"
   integrity sha1-Cr+2rYNXGLn7Te8GdOBmV6lUN1w=
 
-nan@^2.11.0, nan@^2.9.2:
+nan@^2.11.1, nan@^2.9.2:
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.1.tgz#90e22bccb8ca57ea4cd37cc83d3819b52eea6766"
   integrity sha512-iji6k87OSXa0CcrLl9z+ZiYSuR2o+c0bGuNmXdrhTQTakxytAFsC56SArGYoiHlJlFoHSnvmhpceZJaXkVuOtA==
@@ -7055,6 +7049,11 @@ nanomatch@^1.2.9:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+napi-build-utils@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.1.tgz#1381a0f92c39d66bf19852e7873432fc2123e508"
+  integrity sha512-boQj1WFgQH3v4clhu3mTNfP+vOBxorDlE8EKiMjUlLG3C4qAESnn9AxIOkFgTR2c9LtzNjPrjS60cT27ZKBhaA==
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -8182,22 +8181,23 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.2:
     source-map "^0.6.1"
     supports-color "^5.5.0"
 
-prebuild-install@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-4.0.0.tgz#206ce8106ce5efa4b6cf062fc8a0a7d93c17f3a8"
-  integrity sha512-7tayxeYboJX0RbVzdnKyGl2vhQRWr6qfClEXDhOkXjuaOKCw2q8aiuFhONRYVsG/czia7KhpykIlI2S2VaPunA==
+prebuild-install@^5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-5.2.1.tgz#87ba8cf17c65360a75eefeb3519e87973bf9791d"
+  integrity sha512-9DAccsInWHB48TBQi2eJkLPE049JuAI6FjIH0oIrij4bpDVEbX6JvlWRAcAAlUqBHhjgq0jNqA3m3bBXWm9v6w==
   dependencies:
     detect-libc "^1.0.3"
     expand-template "^1.0.2"
     github-from-package "0.0.0"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
+    napi-build-utils "^1.0.1"
     node-abi "^2.2.0"
     noop-logger "^0.1.1"
     npmlog "^4.0.1"
     os-homedir "^1.0.1"
     pump "^2.0.1"
-    rc "^1.1.6"
+    rc "^1.2.7"
     simple-get "^2.7.0"
     tar-fs "^1.13.0"
     tunnel-agent "^0.6.0"
@@ -8331,11 +8331,6 @@ prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2:
   dependencies:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
-
-property-information@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/property-information/-/property-information-3.2.0.tgz#fd1483c8fbac61808f5fe359e7693a1f48a58331"
-  integrity sha1-/RSDyPusYYCPX+NZ52k6H0ilgzE=
 
 property-information@^4.0.0:
   version "4.2.0"
@@ -9327,19 +9322,19 @@ shallowequal@^1.0.1, shallowequal@^1.0.2:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.20.2:
-  version "0.20.8"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.20.8.tgz#e853f10b53b730824f0c3c5e453c79fa0812a48b"
-  integrity sha512-A8NaPGWRDKpmHTi8sl2xzozYXhTQWBb/GaJ8ZPU7L/vKW8wVvd4Yq+isJ0c7p9sX5gnjPQcM3eOfHuvvnZ2fOQ==
+sharp@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.21.0.tgz#e3cf2e4cb9382caf78efb3d45252381730e899c4"
+  integrity sha512-qr6yMl0ju8EGMtjIj5U1Ojj8sKuZ99/DQaNKWmoFHxqg3692AFSrEiPI/yr0O05OWtGD8LuCw8WSGmnZcNrZaA==
   dependencies:
     color "^3.0.0"
     detect-libc "^1.0.3"
     fs-copy-file-sync "^1.1.1"
-    nan "^2.11.0"
+    nan "^2.11.1"
     npmlog "^4.1.2"
-    prebuild-install "^4.0.0"
+    prebuild-install "^5.2.0"
     semver "^5.5.1"
-    simple-get "^2.8.1"
+    simple-get "^3.0.3"
     tar "^4.4.6"
     tunnel-agent "^0.6.0"
 
@@ -9385,10 +9380,19 @@ simple-concat@^1.0.0:
   resolved "https://registry.yarnpkg.com/simple-concat/-/simple-concat-1.0.0.tgz#7344cbb8b6e26fb27d66b2fc86f9f6d5997521c6"
   integrity sha1-c0TLuLbib7J9ZrL8hvn21Zl1IcY=
 
-simple-get@^2.7.0, simple-get@^2.8.1:
+simple-get@^2.7.0:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/simple-get/-/simple-get-2.8.1.tgz#0e22e91d4575d87620620bc91308d57a77f44b5d"
   integrity sha512-lSSHRSw3mQNUGPAYRqo7xy9dhKmxFXIjLjp4KHpf99GEH2VH7C3AM+Qfx6du6jhfUi6Vm7XnbEVEf7Wb6N8jRw==
+  dependencies:
+    decompress-response "^3.3.0"
+    once "^1.3.1"
+    simple-concat "^1.0.0"
+
+simple-get@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/simple-get/-/simple-get-3.0.3.tgz#924528ac3f9d7718ce5e9ec1b1a69c0be4d62efa"
+  integrity sha512-Wvre/Jq5vgoz31Z9stYWPLn0PqRqmBDpFSdypAnHu5AvRVCYPRYGnvryNLiXu8GOBNDH82J2FRHUGMjjHUpXFw==
   dependencies:
     decompress-response "^3.3.0"
     once "^1.3.1"
