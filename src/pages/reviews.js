@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import Link from "gatsby-link";
+import { graphql, Link } from "gatsby";
+
+import Layout from "../components/layout";
 import StarRatingComponent from "react-star-rating-component";
 
 class ReviewPage extends Component {
   render() {
     const reviews = this.props.data.reviews.edges;
     return (
-      <div>
+      <Layout>
         <section className="reviews" style={{ textAlign: `center` }}>
           <h1>Reviews</h1>
           <nav>
@@ -42,7 +44,8 @@ class ReviewPage extends Component {
                       <em>{node.record.title}</em>
                     </Link>
                     {` `}
-                    by{` `}
+                    by
+                    {` `}
                     <Link to={`/artists/${node.record.artist.slug}`}>
                       <strong>{node.record.artist.name}</strong>
                     </Link>
@@ -66,7 +69,7 @@ class ReviewPage extends Component {
             </ul>
           </nav>
         </section>
-      </div>
+      </Layout>
     );
   }
 }
