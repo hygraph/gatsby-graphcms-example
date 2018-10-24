@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby with GraphCMS`
+    title: `Gatsby Source GraphCMS Example`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby with GraphCMS`,
-        short_name: `Gatsby GCMS`,
+        name: `Gatsby Source GraphCMS Example`,
+        short_name: `Gatsby + GraphCMS`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#61045f`,

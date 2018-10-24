@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Link from "gatsby-link";
+import { graphql, Link } from "gatsby";
+
+import Layout from "../components/layout";
 
 class RecordPage extends Component {
   render() {
     const records = this.props.data.records.edges;
     return (
-      <div>
+      <Layout>
         <section className="records" style={{ textAlign: `center` }}>
           <h1>Records</h1>
           <nav>
@@ -66,7 +68,7 @@ class RecordPage extends Component {
             </ul>
           </nav>
         </section>
-      </div>
+      </Layout>
     );
   }
 }
