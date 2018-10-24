@@ -1,6 +1,8 @@
 import React from "react";
+import { graphql, Link } from "gatsby";
 import * as PropTypes from "prop-types";
-import Link from "gatsby-link";
+
+import Layout from "../components/layout";
 
 const propTypes = {
   data: PropTypes.object.isRequired
@@ -10,7 +12,7 @@ class RecordDetailTemplate extends React.Component {
   render() {
     const { record } = this.props.data;
     return (
-      <div>
+      <Layout>
         <h1 id={record.slug}>{record.title}</h1>
         {record.artist ? (
           <h3>
@@ -85,7 +87,7 @@ class RecordDetailTemplate extends React.Component {
         >
           <Link to="/records">All Records</Link>
         </h4>
-      </div>
+      </Layout>
     );
   }
 }

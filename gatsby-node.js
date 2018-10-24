@@ -1,8 +1,8 @@
 const path = require(`path`);
 const queryAll = require(`./gatsby/queryAll.js`);
 
-exports.onCreateNode = ({ node, boundActionCreators }) => {
-  const { createNode } = boundActionCreators;
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNode } = actions;
   if (node.internal.type === `Review`) {
     createNode({
       id: `md-${node.id}`,
@@ -18,8 +18,8 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
   }
 };
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
     const artistDetailPageTemplate = path.resolve(
