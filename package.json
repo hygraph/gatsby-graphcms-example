@@ -23,7 +23,7 @@
     "Ricky de Laveaga (https://rdela.com)"
   ],
   "dependencies": {
-    "gatsby": "2.0.44",
+    "gatsby": "2.0.45",
     "gatsby-link": "2.0.6",
     "gatsby-plugin-manifest": "2.0.8",
     "gatsby-plugin-offline": "2.0.13",
