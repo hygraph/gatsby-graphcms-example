@@ -30,8 +30,8 @@
     "gatsby-plugin-react-helmet": "3.0.2",
     "gatsby-source-graphcms": "1.0.0-alpha.3",
     "gatsby-transformer-remark": "2.1.12",
-    "react": "16.6.1",
-    "react-dom": "16.6.1",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "react-helmet": "5.2.0",
     "react-star-rating-component": "1.4.1"
   },
