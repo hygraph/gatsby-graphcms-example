@@ -23,13 +23,13 @@
     "Ricky de Laveaga (https://rdela.com)"
   ],
   "dependencies": {
-    "gatsby": "2.0.85",
-    "gatsby-link": "2.0.7",
+    "gatsby": "2.0.91",
+    "gatsby-link": "2.0.8",
     "gatsby-plugin-manifest": "2.0.13",
     "gatsby-plugin-offline": "2.0.21",
     "gatsby-plugin-react-helmet": "3.0.5",
     "gatsby-source-graphcms": "1.0.0-alpha.3",
-    "gatsby-transformer-remark": "2.1.19",
+    "gatsby-transformer-remark": "2.2.0",
     "react": "16.7.0",
     "react-dom": "16.7.0",
     "react-helmet": "5.2.0",
